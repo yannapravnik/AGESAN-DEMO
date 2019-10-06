@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, td {
+  border: 0px solid white;
+}
+</style>
+</head>
+<body>
+
+<table id="tabla1" width="100%">
+  <tr>
+    <th rowspan="2" style="background-color: blue; color: white; width: 20%;">Paquete de trabajo</th>
+    <th colspan="2" style="background-color: blue; color: white; width: 20%;">Objetivo</th>
+    <th colspan="2" style="background-color: blue; color: white; width: 20%;">Usuario</th>
+    <th colspan="2" style="background-color: blue; color: white; width: 20%;">Responsabilidad</th>
+    <th colspan="2" style="background-color: blue; color: white; width: 20%;">Tiempo</th>
+  </tr>
+  <tr>
+    <td style="text-align:center; background-color: yellow;">Que</td>
+    <td style="text-align:center; background-color: yellow;">Porque</td>
+    <td style="text-align:center; background-color: yellow;">Interesado</td>
+    <td style="text-align:center; background-color: yellow;">Metodo</td>
+    <td style="text-align:center; background-color: yellow;">Preparación</td>
+    <td style="text-align:center; background-color: yellow;">Envio</td>
+    <td style="text-align:center; background-color: yellow;">Inicio</td>
+    <td style="text-align:center; background-color: yellow;">Frecuencia</td>
+  </tr>
+</table>
+<br>
+
+<button onclick="myCreateFunction1()">Crear</button>
+<button onclick="myDeleteFunction1()">Eliminar</button>
+
+<script>
+function myCreateFunction1() {
+  var table = document.getElementById("tabla1");
+  var row = table.insertRow(-1);
+  
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);
+  var cell4 = row.insertCell(3);
+  var cell5 = row.insertCell(4);
+  var cell6 = row.insertCell(5);
+  var cell7 = row.insertCell(6);
+  var cell8 = row.insertCell(7);
+  var cell9 = row.insertCell(8);
+  
+  cell1.innerHTML = '<input type="text" style="width: 100%;">';
+  cell2.innerHTML = '<input type="text" style="width: 100%;">';
+  cell3.innerHTML = '<input type="text" style="width: 100%;">';
+  cell4.innerHTML = '<input type="text" style="width: 100%;">';
+  cell5.innerHTML = '<input type="text" style="width: 100%;">';
+  cell6.innerHTML = '<input type="text" style="width: 100%;">';
+  cell7.innerHTML = '<input type="text" style="width: 100%;">';
+  cell8.innerHTML = '<input type="text" style="width: 100%;">';
+  cell9.innerHTML = '<input type="text" style="width: 100%;">';
+}
+
+function myDeleteFunction1() {
+  document.getElementById("tabla1").deleteRow(-1);
+}
+</script>
+
+<HR />
+<BR />
+<BR />
+
+<table id="tabla2" width="100%">
+  <tr>
+    <th style="background-color: blue; color: white; width: 20%;">Paquete de trabajo</th>
+    <th style="background-color: blue; color: white; width: 20%;">R</th>
+    <th style="background-color: blue; color: white; width: 20%;">A</th>
+    <th style="background-color: blue; color: white; width: 20%;">C</th>
+    <th style="background-color: blue; color: white; width: 20%;">I</th>
+  </tr>
+</table>
+<br>
+
+<button onclick="myCreateFunction2()">Crear</button>
+<button onclick="myDeleteFunction2()">Eliminar</button>
+
+<script>
+function myCreateFunction2() {
+  var table = document.getElementById("tabla2");
+  var row = table.insertRow(-1);
+  
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  var cell3 = row.insertCell(2);
+  var cell4 = row.insertCell(3);
+  var cell5 = row.insertCell(4);
+  
+  cell1.innerHTML = '<input type="text" style="width: 100%;">';
+  cell2.innerHTML = '<input type="text" style="width: 100%;">';
+  cell3.innerHTML = '<input type="text" style="width: 100%;">';
+  cell4.innerHTML = '<input type="text" style="width: 100%;">';
+  cell5.innerHTML = '<input type="text" style="width: 100%;">';
+}
+
+function myDeleteFunction2() {
+  document.getElementById("tabla2").deleteRow(-1);
+}
+</script>
+
+
+<HR />
+<BR />
+<BR />
+
+<table id="tabla3" width="50%">
+  <tr>
+    <th style="background-color: blue; color: white; width: 50%;">Tiempo</th>
+    <th style="background-color: blue; color: white; width: 50%;">Costos</th>
+  </tr>
+</table>
+<br>
+
+<button onclick="myCreateFunction3()">Crear</button>
+<button onclick="myDeleteFunction3()">Eliminar</button>
+
+<script>
+function myCreateFunction3() {
+  var table = document.getElementById("tabla3");
+  var row = table.insertRow(-1);
+  
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  
+  cell1.innerHTML = '<input type="text" style="width: 100%;">';
+  cell2.innerHTML = '<input type="text" style="width: 100%;">';
+}
+
+function myDeleteFunction3() {
+  document.getElementById("tabla3").deleteRow(-1);
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
